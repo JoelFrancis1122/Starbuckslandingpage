@@ -34,9 +34,9 @@
         </div>
         </div>
         <ul class="thumb">
-            <li><a href="#"><img src="./images/thumb1.png" onClick="imgSlider('./images/img1.png')"></a></li>
-            <li><a href="#"><img src="./images/thumb2.png" onClick="imgSlider('./images/img2.png')"></a></li>
-            <li><a href="#"><img src="./images/thumb3.png" onClick="imgSlider('./images/img3.png')"></a></li>
+            <li><a href="#"><img src="./images/thumb1.png" onClick="imgSlider('./images/img1.png');changeCircleColor('#017143')"></a></li>
+            <li><a href="#"><img src="./images/thumb2.png" onClick="imgSlider('./images/img2.png');changeCircleColor('#eb7495')"></a></li>
+            <li><a href="#"><img src="./images/thumb3.png" onClick="imgSlider('./images/img3.png');changeCircleColor('#7b117c')"></a></li>
         </ul>
         <ul class="sci">
              <li><a href="#"><img src="./images/facebook.png"alt=></a></li>
@@ -49,6 +49,10 @@
      <script type="text/javascript">
      function imgSlider(aljo){
         document.querySelector('.Starbucks').src = aljo;
+     }
+     function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
 
      }
     </script>
